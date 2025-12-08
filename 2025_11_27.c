@@ -2,13 +2,17 @@
 double chufa(double a,double b){
        return a/b;
 }
-int main()
-{
 int subtraction(int a,int b)
 {
   int t=a-b;
   return t;
 }
-
+int main()
+{
+       int a,b;
+       printf("请输入你要计算的两个整数!);
+       scanf("%d %d",&a,&b);
+       printf("%d-%d=%d",a,b,subtraction(a,b));
+       return 0;
 }
 
