@@ -22,6 +22,10 @@ int add(int a,int b)
        return t;
 >>>>>>> 12a251f96b9172ecdd9d60c99e30e5846f0e4122
 }
+int multiply(int a,int b)
+{
+       return a*b;
+}
 int main()
 {
        int a,b;
@@ -30,8 +34,12 @@ int main()
        printf("%d-%d=%d\n",a,b,subtraction(a,b));
        printf("%.2f/%.2f=%.2f\n",a,b,chufa(a,b));
        printf("%d+%d=%d\n",a,b,add(a,b));
+       printf("%d*%d=%d\n",a,b,multiply(a,b));
        return 0;
 }
+//qstttt的二次提交
+
+//Linux learn
 
 
 
