@@ -121,7 +121,14 @@ void clear_input_buffer()
 // 根据工号查找教师，返回索引（-1表示未找到）
 int find_teacher_by_id(const char *id)
 {
-
+for(int i=0;i<MAX_TEACHER;i++)
+{
+if(!teachers[i].is_deleted&&strcmp(teachers[i].id,id)==0)
+{
+return i;
+}
+}
+return -1;
 }
 //---------------------------------------------------------------------------------------//
 
