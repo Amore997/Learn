@@ -360,12 +360,13 @@ void query_teacher()
     if(index==-1)
     {
         printf("未找到该工号的教师！\n");
+		return;
     }
     Teacher *t=&teachers[index];
     printf("\n********** 教师信息 **********\n");
     printf("工号: %s\n",t->id);
     printf("姓名: %s\n",t->name);
-    printf("年龄: %s\n",t->age);
+    printf("年龄: %d\n",t->age);
     printf("性别: %s\n",t->gender=='M'?"男":"女");
     printf("基础工资: %.2f 元\n",t->salary);
     printf("奖金: %.2f 元\n",t->bonus);
@@ -400,5 +401,6 @@ void show_all_teachers()
     printf("**********************************\n");
 }
 //---------------------------------------------------------------------------------------//
+
 
 
